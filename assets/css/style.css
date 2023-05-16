@@ -16,6 +16,7 @@
 
 body{
     background-color: var(--body-color);
+    margin: 0;
    
 }
  img {
@@ -27,12 +28,22 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+   
  }
 
  h2{
     font-size: 40px;
  }
 
+ .scroll-h2 {
+    opacity: 0;
+    transition: opacity 2s ease-in;
+  }
+  
+  .fade-in {
+    opacity: 1;
+  }
+  
  button {
     
     background-color: var(--contact-form-bg-color);
@@ -46,22 +57,38 @@ body{
  header {
     height: 70px;
     background-color: transparent;
+   
     
     
+   
     
-    
- }
- .nombre-header{
+}
+
+
+
+ .nombre_header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: fixed;
     width: 100%;
+    background-color: transparent;
+    transition: 1s;
+    margin-left: 0;
+ }
+
+ .nombre_header_show {
+
+    background-color: rgb(11, 10, 10);
+    height: 100px;
+    transition: 1.5s;
+    
  }
 
 h1 {
     
     width: 250px;
+    padding-left: 20px;
 }
  .menu-movil {
     display: flex;
